@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ganesh Ji</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+</head>
+<body>
+<header>
+    <br>
+    <h2><span>G</span> HAPPY GANESH CHATURTHI <span>G</span></h2>
+    <div class="centerimg">
+        <img src="ganeshji.png" width="350px">
+        <h3>
+            Vakratund mahakay, Suryakoti samprabha<br>
+            Nirvighnam Kurume devam, Sarvakaryesu sarvada<br>
+            -ॐ वक्रतुण्ड़ महाकाय सूर्य कोटि समप्रभ। <br>
+            निर्विघ्नं कुरू मे देव, सर्व कार्येषु सर्वदा।। <br>
+            Happy Ganesh Chaturthi! by: Saurabh
+        </h3>
+    </div>
+</header>
+
+<!-- Audio element -->
+<audio id="audioElement" src="saura.mp3" preload="auto"></audio>
+
+<!-- Play button -->
+<button onclick="playAudio()">Play Audio</button>
+
+<script>
+    function playAudio() {
+        var audio = document.getElementById('audioElement');
+        audio.play();
+    }
+</script>
+
+</body>
+</html>
