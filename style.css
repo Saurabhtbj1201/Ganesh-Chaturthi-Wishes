@@ -87,3 +87,40 @@ header h2{
 	width: 100%;
 }
 }
+
+
+button {
+	padding: 20px 40px;
+	font-size: 16px;
+	background-color: #f07d00;
+	color: white;
+	border: navy;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: #d66a00;
+}
+
+.play-button-container {
+    position: absolute;
+    bottom: 30px; /* Adjust distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center the button horizontally */
+    z-index: 10; /* Ensure the button is above other elements */
+}
+
+.play-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f07d00;
+    color: white;
+    border: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.play-button:hover {
+    background-color: #d66a00;
+}
