@@ -22,16 +22,13 @@
 </header>
 
 <!-- Audio element -->
+<!-- Audio element -->
 <audio id="audioElement" src="saura.mp3" preload="auto"></audio>
-
-<!-- Play button -->
-<button onclick="playAudio()">Play Audio</button>
-
 <script>
-    function playAudio() {
+	  window.addEventListener('load', function() {
         var audio = document.getElementById('audioElement');
         audio.play();
-    }
+    });
 </script>
 
 </body>
