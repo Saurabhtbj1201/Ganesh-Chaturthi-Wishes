@@ -21,11 +21,18 @@
     </div>
 </header>
 
-<!-- Audio element -->
+
 <!-- Audio element -->
 <audio id="audioElement" src="saura.mp3" preload="auto"></audio>
+
+<!-- Play Button -->
+<div style="text-align: center; margin-top: 20px;">
+    <button id="playButton" style="padding: 10px 20px; font-size: 16px;">Play Devotional Song</button>
+</div>
+
+<!-- JavaScript to control the audio playback -->
 <script>
-	  window.addEventListener('load', function() {
+    document.getElementById('playButton').addEventListener('click', function() {
         var audio = document.getElementById('audioElement');
         audio.play();
     });
