@@ -34,7 +34,13 @@
 <script>
     document.getElementById('playButton').addEventListener('click', function() {
         var audio = document.getElementById('audioElement');
-        audio.play();
+        if (audio.paused) {
+            audio.play();
+            this.textContent = 'Pause'; // Change button text to 'Pause' when audio is playing
+        } else {
+            audio.pause();
+            this.textContent = 'Play'; // Change button text to 'Play' when audio is paused
+        }
     });
 </script>
 
